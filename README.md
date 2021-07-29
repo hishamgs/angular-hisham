@@ -1,4 +1,4 @@
-Instructions to run the Angular project locally:
+Instructions on how to run the project:
 
 1) Install the latest version of Node
 
