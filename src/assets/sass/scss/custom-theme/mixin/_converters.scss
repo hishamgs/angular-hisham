@@ -1,0 +1,11 @@
+@function convert-font-size($size){
+    @return ($size/$base-font)*1#{$base-unit-type};
+}
+
+@function padding-converter($value){
+    @return ($value/$base-padding-value)*1#{$base-unit-type};
+}
+
+@function rem-calc($value){
+    @return ($value/$base-padding-value)*1#{$base-unit-type};
+}

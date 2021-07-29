@@ -1,0 +1,4 @@
+$imp:"!important";
+@mixin create-gradient($top: #f00, $bottom: #f00, $ang: 0deg) {
+    background-image: linear-gradient($ang, $top, $bottom)#{$imp};
+}

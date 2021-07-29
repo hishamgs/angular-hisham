@@ -1,0 +1,117 @@
+/* common styles */
+ 
+  html {
+    height: 100%
+  }
+
+  body {
+    position: relative;
+    margin: 0;
+    padding-bottom: 6rem;
+    min-height: 100%;
+    background-color: $primary-body-background-color;
+  } 
+
+  .box-shadow {
+    box-shadow: 0 0.75rem 1.75rem 0 rgb(0 0 0 / 20%), 0 0.125rem 0.25rem 0 rgb(0 0 0 / 10%);
+    height: 100%;
+    border-radius: 0.438rem;
+  }
+
+  .bg-white {
+    background-color: $background-color-white;
+  }
+
+  .br-5 {
+    border-radius: 0.313rem;
+  }
+
+  .fw-500 {
+    font-weight: 500;
+  }
+
+  .f-italic {
+    font-style: italic;
+  }
+
+  .f-size-14 {
+    font-size: 0.875rem;
+  }
+
+  .cursor-pointer {
+    cursor:pointer;
+  }
+
+  .container {
+    padding-right: 0.938rem;
+    padding-left: 0.938rem;
+    margin-right: auto;
+    margin-left: auto;
+    @media (min-width: 48rem) {
+      width: 46.875rem;
+    }
+    @media (min-width: 62rem) {
+      width: 60.625rem;
+    }
+    @media (min-width: 75rem) {
+      width: 73.125rem;
+    }
+  }
+  
+  .text-white {
+    color: $font-white;
+  }
+  
+  .h-100 {
+    height: 100%;
+  }
+  
+  .d-flex {
+    display: flex;
+  }
+  
+  .align-center {
+    align-items: center;
+  }
+  
+  .grid-one {
+    display: grid;
+    grid-column-gap: 0.938rem;
+    grid-template-columns: repeat(1, 1fr);
+  }
+  
+  .w-100 {
+     width: 100%;
+  }
+  
+  .text-center {
+    text-align: center;
+  }
+  
+  .height-c {
+    height: 3rem;
+  }
+
+  .text-ls {
+    text-align: left;
+    @media (max-width:47.938rem) {
+      text-align: center;
+    }
+  }
+
+  .text-rs {
+    text-align: right;
+    @media (max-width:47.938rem) {
+      text-align: center;
+    }
+  }
+
+
+
+
+
+
+
+
+
+

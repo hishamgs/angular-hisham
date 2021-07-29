@@ -1,0 +1,47 @@
+  /* home page styles */
+
+  .home-page {
+    .align-center {
+      align-self: center;
+      label {
+        font-weight: 500;
+        padding-right: 0.938rem;
+        &.ellipsis {                 /* ellipsis on home page is set for single line */
+          overflow: hidden;
+          text-overflow: ellipsis;
+          display: -webkit-box;
+          -webkit-line-clamp: 1;
+          -webkit-box-orient: vertical;
+        }
+      }
+      p {
+        font-size: 0.9rem;
+        font-weight: 400;
+        color: $text-color-ash;
+      }
+    }
+
+    .album-info {
+      &:hover {
+        transform: scale(1.015);
+      }
+    }
+
+    .grid-two {
+      display: grid;
+      grid-gap: 0.938rem;
+      grid-template-columns: repeat(2, 1fr);
+      @media (max-width: 47.938rem) {
+          grid-template-columns: repeat(1, 1fr);
+      }
+      .item {
+        position: relative;
+        display:flex;
+      }
+    }
+    .main-heading {
+        color: $primary-text-color-dark;
+        font-size: 2rem;
+        font-weight: 700;
+    }
+  }

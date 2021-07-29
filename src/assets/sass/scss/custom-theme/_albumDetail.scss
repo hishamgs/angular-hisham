@@ -1,0 +1,27 @@
+/* Album detail page styles */
+
+.detail-page {
+    .text-blue {
+      color: $text-color-blue;
+    }
+    .grid-four {
+      display: grid;
+      grid-gap: 0.938rem;
+      grid-template-columns: repeat(4, 1fr);
+      @media (max-width: 47.938rem) {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    .ellipsis {            /* ellipsis in album detail page is set for second line */
+      overflow: hidden;
+      text-overflow: ellipsis;
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+    }
+    .sub-heading {
+        color: $primary-text-color-dark;
+        font-size: 1.5rem;
+        font-weight: 700;
+    }
+  }
