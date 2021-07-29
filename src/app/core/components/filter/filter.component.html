@@ -1,0 +1,7 @@
+<form>
+    <label class="mr-2 text-white">Sort by : </label>
+    <select class="select-order p-1" (change)="sendMessage($event.target.value)">
+        <option value="asc">Title ASC</option>
+        <option value="desc">Title DESC</option>
+    </select>
+</form>

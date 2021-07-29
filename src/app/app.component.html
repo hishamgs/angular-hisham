@@ -1,0 +1,16 @@
+<app-layout-header></app-layout-header>
+
+<!-- Loader -->
+<div class="myLoadBar" *ngIf="myLoaderService.isLoading | async">
+    <div class="lds-ring">
+        <div></div>
+        <div></div>
+        <div></div>
+        <div></div>
+    </div>
+</div>
+<!-- Loader -->
+
+<router-outlet></router-outlet>
+
+<app-layout-footer></app-layout-footer>

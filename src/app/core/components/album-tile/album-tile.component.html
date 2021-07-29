@@ -1,0 +1,11 @@
+<div class="box-shadow bg-white album-info cursor-pointer px-2 pt-2">
+    <div class="grid-two">
+        <div class="grid-one">
+            <img src="{{ albumImage }}" class="w-100 br-5">
+        </div>
+        <div class="grid-one align-center text-ls">
+            <label class="ellipsis cursor-pointer">{{ albumTitle }}</label>
+            <p *ngIf="photoCount">({{ photoCount }} pictures)</p>
+        </div>
+    </div>
+</div>

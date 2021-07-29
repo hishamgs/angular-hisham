@@ -1,0 +1,23 @@
+<!-- Loader -->
+<div class="myLoadBar" *ngIf="myLoaderService.isLoading | async">
+  <div class="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Loader -->
+
+<div class="home-page my-4">
+  <div class="container">
+    <h3 class="main-heading mt-0 mb-3">My Albums</h3>
+    <div class="grid-two" *ngIf="home.imageUrl && home.imageUrl.length > 0">
+      <!-- Album tile -->
+      <app-album-tile *ngFor="let album of home.albums; let i = index" class="my-2 item"
+        [albumImage]="home.imageUrl[i].url" [albumTitle]="album.title" [photoCount]="home.photoCount[i]"
+        (click)="albumDetail(album.id, album.title)"></app-album-tile>
+      <!-- Album tile -->
+    </div>
+  </div>
+</div>

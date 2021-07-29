@@ -1,0 +1,25 @@
+<!-- Loader -->
+<div class="myLoadBar" *ngIf="myLoaderService.isLoading | async">
+  <div class="lds-ring">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+</div>
+<!-- Loader -->
+
+<div class="detail-page my-4">
+  <div class="container">
+    <div class="d-flex align-center cursor-pointer text-blue mb-3 f-size-14 fw-500" (click)="backToAlbums()">
+      <img src="../../assets/images/arrow-left.svg" class="mr-2">Back to albums
+    </div>
+    <h3 *ngIf="albumDetail.albumName" class="sub-heading my-2">{{ albumDetail.albumName }}</h3>
+    <div class="grid-four" *ngIf="albumDetail.albumDetail">
+      <!-- Photo tile -->
+      <app-photo-tile *ngFor="let item of albumDetail.albumDetail | sortBy:albumDetail.sortOrder:'title'; let i = index"
+        class="my-2" [photo]="item.url" [photoTitle]="item.title"></app-photo-tile>
+      <!-- Photo tile -->
+    </div>
+  </div>
+</div>
